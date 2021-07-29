@@ -13,11 +13,11 @@
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="250dp"
-        android:hint="Enter a Name"
+        android:hint="Enter Title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text"
+            android:id="@+id/edit_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences" />
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@id/input_field"
         app:layout_constraintStart_toStartOf="@id/input_field">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text2"
+            android:id="@+id/edit_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences" />
@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Create Channel One"
+        android:onClick="sendOnChannelOne"
         app:layout_constraintEnd_toEndOf="@+id/input_field2"
         app:layout_constraintStart_toStartOf="@+id/input_field2"
         app:layout_constraintTop_toBottomOf="@+id/input_field2" />
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Create Channel Two"
+        android:onClick="sendOnChannelTwo"
         app:layout_constraintEnd_toEndOf="@+id/button"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
